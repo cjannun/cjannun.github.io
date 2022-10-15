@@ -21,30 +21,66 @@ p {
 
 .about-me-text {
   display: flex;
-  flex-basis: 800px;
-  flex-shrink: 0;
+  width: 100%;
   flex-direction: column;
+  min-height: 0;
+}
+
+.sophomore-text {
+  background: #0027C2;
+  background: linear-gradient(to right, #0027C2 0%, #FF4716 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.uf-text {
+  background: #FF4716;
+  background: linear-gradient(to right, #FF4716 0%, #0027C2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.summer-text,
+.interests-text {
+  background: #FFFF9E;
+  background: linear-gradient(to right, #FFFF9E 0%, #F095C5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.internship-text {
+  background: #FFFF9E;
+  background: linear-gradient(to left, #FFFF9E 0%, #F095C5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-me-title {
-  width: 100%;
-  line-height: 60px;
+  width: 120%;
+  line-height: 80px;
   font-size: 26px;
   font-weight: 500;
 }
 
 .about-me-body {
-  width: 100%;
-  line-height: 40px;
+  width: 120%;
+  line-height: 55px;
   font-size: 18px;
   font-weight: 400;
 }
 
 .cj-picture {
-  display: inline-block;
+  display: flex;
   height: auto;
   width: 200px;
   margin: 0%;
+  margin-left: auto;
+  border: 0px;
+  padding: 0;
 }
 
 .projects-grid {
