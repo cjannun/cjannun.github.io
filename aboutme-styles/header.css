@@ -3,10 +3,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+  color: antiquewhite;
 }
 
 .left-section {
-  background-color: lightblue;
   display: flex;
   align-items: center;
 }
@@ -20,7 +26,6 @@
 }
 
 .middle-section {
-  background-color: lightpink;
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
@@ -94,18 +99,8 @@
 }
 
 .right-section {
-  background-color: lightblue;
   width: 260px;
   align-items: center;
   display: flex;
 }
 
-.about-me {
-  width: 100%;
-  background-color: aquamarine;
-}
-
-.projects-grid {
-  width: 100%;
-  background-color: antiquewhite;
-}
