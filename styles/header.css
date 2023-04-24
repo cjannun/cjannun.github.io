@@ -1,0 +1,106 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+  color: antiquewhite;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 36px;
+  margin-left: 20px
+}
+
+.projects-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.github-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.linkedin-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.resume-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.right-section {
+  width: 260px;
+  align-items: center;
+  display: flex;
+}
+
