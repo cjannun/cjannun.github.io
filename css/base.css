@@ -246,9 +246,9 @@ a:focus {
 	outline: none;
 }
 
-.content__nav-button--next {
+/* .content__nav-button--next {
 	transform: translateX(1rem);
-}
+} */
 
 @media screen and (min-width: 53em) {
 	:root {
