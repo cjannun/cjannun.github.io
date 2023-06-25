@@ -128,6 +128,7 @@
           // Navigation controls
           this.DOM.nav = {
               prev: this.DOM.el.querySelector('.content__nav-button--prev'),
+              curr: this.DOM.el.querySelector('.content__nav-button--curr'),
               next: this.DOM.el.querySelector('.content__nav-button--next')
           };
           // All slides
@@ -181,29 +182,28 @@
               upcomingSlide.textFX.show().then(() => this.isAnimating = false);
           };
 
-          console.log(this.current)
+          // Hide the current slide's text, 
+          // and call onCurrentHalfwayCallback at half of the animation
+          // In the end call onCurrentEndCallback
+          currentSlide.textFX.hide({halfwayCallback: onCurrentHalfwayCallback}).then(onCurrentEndCallback);
 
           if (this.current === 1) {
             this.DOM.nav.prev.innerHTML = 'experience';
+            this.DOM.nav.curr.innerHTML = 'skills'
             this.DOM.nav.next.innerHTML = 'projects';
           }
 
           if (this.current === 2) {
             this.DOM.nav.prev.innerHTML = 'skills';
+            this.DOM.nav.curr.innerHTML = 'projects'
             this.DOM.nav.next.innerHTML = 'experience';
           }
 
           if (this.current === 0) {
             this.DOM.nav.prev.innerHTML = 'projects';
+            this.DOM.nav.curr.innerHTML = 'experience';
             this.DOM.nav.next.innerHTML = 'skills';
           }
-
-          
-
-          // Hide the current slide's text, 
-          // and call onCurrentHalfwayCallback at half of the animation
-          // In the end call onCurrentEndCallback
-          currentSlide.textFX.hide({halfwayCallback: onCurrentHalfwayCallback}).then(onCurrentEndCallback);
       }
   }
 
