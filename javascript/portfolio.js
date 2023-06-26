@@ -11,7 +11,7 @@
           // The index of the main text element
           this.middleIdx = Math.floor(this.DOM.textsTotal/2);
           // Time between each showing/hiding of each text instance
-          this.loopInterval = {show: 80, hide: 80};
+          this.loopInterval = {show: 120, hide: 120};
           // optional: Extra time to the whole show/hide animation. 
           this.loopEndIddleTime = this.loopInterval.show;
       }

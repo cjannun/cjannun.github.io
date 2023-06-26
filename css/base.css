@@ -118,6 +118,7 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	pointer-events: none;
 }
 
 .content__slide {
@@ -141,7 +142,7 @@ a:hover {
 .content__img,
 .content__text-wrap {
 	grid-area: inner;
-	width: 100%;
+	width: 30%;
 }
 
 .content__img {
@@ -151,7 +152,6 @@ a:hover {
 	max-height: 600px; */
 	justify-self: center;
 	overflow: hidden;
-	z-index: -1;
 	position: relative;
 }
 
@@ -188,6 +188,7 @@ a:hover {
 	pointer-events: none;
 	align-self: flex-start;
 	justify-self: flex-start;
+	z-index: 10;
 }
 
 .content__text:nth-child(6) {
@@ -223,6 +224,12 @@ a:hover {
 .card__grid {
 	justify-content: flex-start;
 	align-content: flex-end;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80%;
+	z-index: 11;
+	pointer-events: auto;
 }
 
 .card__element {
@@ -236,13 +243,14 @@ a:hover {
 	justify-self: flex-end;
 	float: right;
 	margin: 1.5rem;
-	box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
   transition: .3s box-shadow, .3s margin-top ease-in-out;
+	position: relative;
 }
 
 .card__element:hover {
-	box-shadow: 2px 12px 32px rgba(0, 0, 0, 0.5);
-	margin-top: .5rem;
+	box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.8);
+	margin-top: 1rem;
 	cursor: pointer;
 }
 
@@ -258,6 +266,7 @@ a:hover {
 	justify-content: center;
 	font-size: 1.25rem;
 	position: relative;
+	pointer-events: auto;
 }
 
 .content__nav-button {
@@ -303,7 +312,7 @@ a:hover {
 		align-content: space-between;
 		width: 100%;
 		max-width: none;
-		height: 100vh;
+		height: 20vh;
 		padding: 3rem;
 		pointer-events: none;
 		grid-template-columns: 50% 50%;
@@ -315,6 +324,7 @@ a:hover {
 	.frame__title-wrap {
 		grid-area: title;
 		display: flex;
+		z-index: 1;
 	}
 	.frame__title {
 		font-size: 35px;
@@ -353,6 +363,8 @@ a:hover {
 		width: 100%;
 		height: 70%;
 		justify-content: flex-end;
+		position: relative;
+		z-index: 9;
 	}
 	.content__img--full {
 		height: calc(100vh + 20px);
@@ -369,5 +381,6 @@ a:hover {
 		justify-content: flex-start;
 		margin-top: 30vh;
 		font-size: 1.75rem;
+		z-index: 10;
 	}
 }
