@@ -18,7 +18,7 @@ body {
 	--color-nav: #a8dadc;
 	--color-nav-hover: #f1faee;
 	--font-trail-weight: 900;
-	--font-trail-size: 17vh;
+	--font-trail-size: 12vh;
 	--font-trail-lheight: 0.75;
 	--font-trail-family: 'Chivo Mono', sans-serif; 
 	color: var(--color-text);
@@ -146,7 +146,7 @@ a:hover {
 
 .content__img {
 	height: 50%;
-	width: 90;
+	width: 100%;
 	/* max-width: calc(1000px - 11rem);
 	max-height: 600px; */
 	justify-self: center;
@@ -176,8 +176,9 @@ a:hover {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-end;
+	justify-content: flex-end;
+	align-content: flex-end;
 }
 
 .content__text {
@@ -185,6 +186,8 @@ a:hover {
 	flex: 1;
 	opacity: 0;
 	pointer-events: none;
+	align-self: flex-start;
+	justify-self: flex-start;
 }
 
 .content__text:nth-child(6) {
@@ -199,7 +202,7 @@ a:hover {
 	display: block;
 	color: var(--color-slide-text);
 	text-transform: uppercase;
-	font-size: 3.5rem;
+	font-size: 1.5rem;
 	font-weight: var(--font-trail-weight);
 	line-height: var(--font-trail-lheight);
 	font-family: var(--font-trail-family);
@@ -217,15 +220,41 @@ a:hover {
 	color: transparent;
 }
 
+.card__grid {
+	justify-content: flex-start;
+	align-content: flex-end;
+}
+
+.card__element {
+	background-color: #a8dadc;
+	color: #f1faee;
+	border-radius: 16px;
+	border: 3px solid #e63946;
+	width: 20rem;
+	height: 10rem;
+	padding: 4px;
+	justify-self: flex-end;
+	float: right;
+	margin: 1.5rem;
+	box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.2);
+  transition: .3s box-shadow, .3s margin-top ease-in-out;
+}
+
+.card__element:hover {
+	box-shadow: 2px 12px 32px rgba(0, 0, 0, 0.5);
+	margin-top: .5rem;
+	cursor: pointer;
+}
+
 .content__nav {
 	grid-area: main;
 	justify-self: center;
-	align-self: end;
+	align-self: start;
 	width: 90%;
 	max-width: 900px;
 	height: auto;
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-start;
 	justify-content: center;
 	font-size: 1.25rem;
 	position: relative;
@@ -311,7 +340,7 @@ a:hover {
 	.links {
 		border: none;
 		background-color: transparent;
-		justify-self: end;
+		justify-self: center;
 	}
 
 	.frame a {
@@ -321,8 +350,9 @@ a:hover {
 		height: 100vh;
 	}
 	.content__img {
-		width: 90%;
+		width: 100%;
 		height: 70%;
+		justify-content: flex-end;
 	}
 	.content__img--full {
 		height: calc(100vh + 20px);
