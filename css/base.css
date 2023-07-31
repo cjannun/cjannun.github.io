@@ -11,8 +11,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #f1faee;
-	--color-bg: #05668d;
-	--color-link: #a8dadc;
+	--color-bg: #a88565;
+	--color-link: #d9bea1;
 	--color-link-hover: #f1faee;
 	--color-slide-text: #f1faee;
 	--color-nav: #a8dadc;
@@ -233,20 +233,22 @@ a:hover {
 }
 
 .card__element {
-	background-color: #f0f3bd;
-	color: #00a896;
+	background-color: #549aa5;
+	color: #18525a;
 	border-radius: 16px;
-	border: 3px solid #00a896;
-	width: 20rem;
-	height: 10rem;
+	border: 3px solid #f1faee;
+	width: 25rem;
+	height: 11.5rem;
 	padding: 4px;
 	justify-self: flex-end;
 	float: right;
-	margin: 1rem;
+	margin: .7rem;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
   transition: .3s box-shadow, .3s margin-top ease-in-out;
 	position: relative;
 	vertical-align: top;
+	text-align: center;
+	line-height: 1.5rem;
 }
 
 .card__element:hover {
