@@ -120,8 +120,8 @@
             // change slide transition time here
             action === 'hide' ? 3 : 4.5, { 
               ease: action === 'hide' ? Quint.easeOut : Quint.easeOut,
-              startAt: action === 'hide' ? {} : {x: dir === 'next' ? '-100%' : '100%'},
-              x: action === 'hide' ? dir === 'next' ? '100%' : '-100%' : '0%'
+              startAt: action === 'hide' ? {} : {x: dir === 'next' ? '110%' : '-110%'},
+              x: action === 'hide' ? dir === 'next' ? '-110%' : '110%' : '0%'
           }, 'begin');
       }
   }
