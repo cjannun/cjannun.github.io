@@ -111,14 +111,14 @@
           new TimelineMax().add('begin')
           .to(this.DOM.img.wrap, 
             // change slide transition time here
-            action === 'hide' ? 3 : 4.5, { 
+            action === 'hide' ? 3 : 4, { 
               ease: action === 'hide' ? Quint.easeOut : Quint.easeOut,
               startAt: action === 'hide' ? {} : {x: dir === 'next' ? '110%' : '-110%', opacity: 1},
               x: action === 'hide' ? dir === 'next' ? '-110%' : '110%' : '0%'
           }, 'begin')
           .to(this.DOM.img.inner, 
             // change slide transition time here
-            action === 'hide' ? 3 : 4.5, { 
+            action === 'hide' ? 3 : 4, { 
               ease: action === 'hide' ? Quint.easeOut : Quint.easeOut,
               startAt: action === 'hide' ? {} : {x: dir === 'next' ? '110%' : '-110%'},
               x: action === 'hide' ? dir === 'next' ? '-110%' : '110%' : '0%'
