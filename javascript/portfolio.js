@@ -109,12 +109,16 @@
       }
       toggleImage(action, dir) {
           new TimelineMax().add('begin')
-          .to(this.DOM.img.wrap, action === 'hide' ? 0.3 : 0.7, { 
+          .to(this.DOM.img.wrap, 
+            // change slide transition time here
+            action === 'hide' ? 3 : 4.5, { 
               ease: action === 'hide' ? Quint.easeOut : Quint.easeOut,
               startAt: action === 'hide' ? {} : {x: dir === 'next' ? '110%' : '-110%', opacity: 1},
               x: action === 'hide' ? dir === 'next' ? '-110%' : '110%' : '0%'
           }, 'begin')
-          .to(this.DOM.img.inner, action === 'hide' ? 0.3 : 0.7, { 
+          .to(this.DOM.img.inner, 
+            // change slide transition time here
+            action === 'hide' ? 3 : 4.5, { 
               ease: action === 'hide' ? Quint.easeOut : Quint.easeOut,
               startAt: action === 'hide' ? {} : {x: dir === 'next' ? '-100%' : '100%'},
               x: action === 'hide' ? dir === 'next' ? '100%' : '-100%' : '0%'
@@ -188,21 +192,21 @@
           currentSlide.textFX.hide({halfwayCallback: onCurrentHalfwayCallback}).then(onCurrentEndCallback);
 
           if (this.current === 1) {
-            this.DOM.nav.prev.innerHTML = 'experience';
-            this.DOM.nav.curr.innerHTML = 'skills'
-            this.DOM.nav.next.innerHTML = 'projects';
+            this.DOM.nav.prev.innerHTML = 'about me';
+            this.DOM.nav.curr.innerHTML = 'experience';
+            this.DOM.nav.next.innerHTML = 'skills'; 
           }
 
           if (this.current === 2) {
-            this.DOM.nav.prev.innerHTML = 'skills';
-            this.DOM.nav.curr.innerHTML = 'projects'
-            this.DOM.nav.next.innerHTML = 'experience';
+            this.DOM.nav.prev.innerHTML = 'experience';
+            this.DOM.nav.curr.innerHTML = 'skills';
+            this.DOM.nav.next.innerHTML = 'about me';             
           }
 
           if (this.current === 0) {
-            this.DOM.nav.prev.innerHTML = 'projects';
-            this.DOM.nav.curr.innerHTML = 'experience';
-            this.DOM.nav.next.innerHTML = 'skills';
+            this.DOM.nav.prev.innerHTML = 'skills';
+            this.DOM.nav.curr.innerHTML = 'about me'
+            this.DOM.nav.next.innerHTML = 'experience';
           }
       }
   }
