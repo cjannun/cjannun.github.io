@@ -233,27 +233,105 @@ a:hover {
 }
 
 .card__element {
+	width: 27rem;
+	height: 12rem;
+	perspective: 1000px;
+	justify-self: flex-end;
+	float: right;
+	margin: 1.7rem;
+	position: relative;
+	vertical-align: top;
+}
+
+/* flip card horizontally on hover */
+.card__element:hover .card__element-inner{
+	transform: rotateY(180deg);
+}
+
+.card__element-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
 	background-color: #e63946;
 	color: #f1faee;
 	border-radius: 16px;
-	width: 25rem;
-	height: 11.5rem;
-	padding: 4px;
-	justify-self: flex-end;
-	float: right;
-	margin: .7rem;
-	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
-  transition: .3s box-shadow, .3s margin-top ease-in-out;
-	position: relative;
-	vertical-align: top;
-	text-align: center;
+	line-height: 3rem;
+	border-radius: 16px;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card__element-front {
+	padding: 1rem;
+} 
+
+.card__element-front,
+.card__element-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card__element-skill-grid {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card__element-back {
+	transform: rotateY(180deg);
+}
+
+.card__element-location {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 2.5rem;
+}
+
+.card__element-skill {
+	font-weight: 700;
+	font-size: 24px;
+	height: 50%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__element-description {
+	font-weight: 400;
+	font-size: 16px;
 	line-height: 1.5rem;
 }
 
-.card__element:hover {
-	box-shadow: 2px 12px 20px rgba(0, 0, 0, 1);
-	/* margin-top: 0rem; */
-	cursor: pointer;
+.card__element-title {
+	font-weight: 900;
+	font-size: 32px;
+	color: #a8dadc;
+	line-height: 2.5rem;
+}
+
+a.skill-link {
+	text-decoration: inherit;
+	color: inherit;
+	position: absolute;
+}
+
+a.skill-link:hover {
+	color: #a8dadc;
+	line-height: 1.5rem;
+}
+
+p.skill-link {
+	line-height: 1.5rem;
 }
 
 .content__nav {
