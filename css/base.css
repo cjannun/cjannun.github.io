@@ -10,13 +10,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #f1faee;
-	--color-bg: #1d3557;
-	--color-link: #a8dadc;
-	--color-link-hover: #f1faee;
-	--color-slide-text: #f1faee;
-	--color-nav: #a8dadc;
-	--color-nav-hover: #f1faee;
+	--color-text: #F4E9CD;
+	--color-bg: #254D58;
+	--color-link: #80ffdb;
+	--color-link-hover: #F4E9CD;
+	--color-slide-text: #F4E9CD;
+	--color-nav: #80ffdb;
+	--color-nav-hover: #F4E9CD;
 	--font-trail-weight: 900;
 	--font-trail-size: 12vh;
 	--font-trail-lheight: 0.75;
@@ -124,7 +124,7 @@ a:hover {
 
 .content__slide {
 	grid-area: main;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	overflow: hidden;
 	display: grid;
@@ -134,6 +134,7 @@ a:hover {
 	align-items: center;
 	opacity: 0;
 	pointer-events: none;
+	align-self: center;
 }
 
 .content__slide--current {
@@ -170,6 +171,7 @@ a:hover {
 	height: 100%;
 	background-position: 50% 50%;
 	background-size: cover;
+	background-color: #254D58;
 }
 
 .content__text-wrap {
@@ -215,9 +217,7 @@ a:hover {
 
 .content__text-inner--stroke {
 	-webkit-text-stroke: 2px var(--color-slide-text);
-	text-stroke: 2px var(--color-slide-text);
 	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
 	color: transparent;
 }
 
@@ -227,7 +227,7 @@ a:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 80%;
+	width: 32rem;
 	z-index: 11;
 	pointer-events: auto;
 }
@@ -238,14 +238,14 @@ a:hover {
 	perspective: 1000px;
 	justify-self: flex-end;
 	float: right;
-	margin: 1.7rem;
+	margin: 1rem;
 	position: relative;
 	vertical-align: top;
 }
 
 /* flip card horizontally on hover */
 .card__element:hover .card__element-inner{
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
 }
 
 .card__element-inner {
@@ -253,10 +253,10 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	transition: transform 1s;
+	transition: transform 2s;
 	transform-style: preserve-3d;
-	background-color: #e63946;
-	color: #f1faee;
+	background-color: #031926;
+	color: #F4E9CD;
 	border-radius: 16px;
 	line-height: 3rem;
 	border-radius: 16px;
@@ -287,7 +287,7 @@ a:hover {
 }
 
 .card__element-back {
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
 }
 
 .card__element-location {
@@ -315,7 +315,7 @@ a:hover {
 .card__element-title {
 	font-weight: 900;
 	font-size: 32px;
-	color: #a8dadc;
+	color: #F4E9CD;
 	line-height: 2.5rem;
 }
 
@@ -326,7 +326,7 @@ a.skill-link {
 }
 
 a.skill-link:hover {
-	color: #a8dadc;
+	color: #F4E9CD;
 	line-height: 1.5rem;
 }
 
@@ -367,11 +367,11 @@ p.skill-link {
 }
 
 .content__nav-button--curr {
-	color: #457b9d;
+	color: #F4E9CD;
 }
 
 .content__nav-button:focus {
-	outline: #f1faee;
+	outline: #F4E9CD;
 }
 
 @media screen and (min-width: 53em) {
