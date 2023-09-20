@@ -17,14 +17,14 @@ body {
 	--color-slide-text: #F4E9CD;
 	--color-nav: #80ffdb;
 	--color-nav-hover: #F4E9CD;
-	--font-trail-weight: 900;
+	--font-trail-weight: 800;
 	--font-trail-size: 12vh;
 	--font-trail-lheight: 0.75;
-	--font-trail-family: 'Cairo', sans-serif; 
+	--font-trail-family: 'Inter', sans-serif; 
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: 'Cairo', sans-serif;
-	font-weight: 700;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -274,13 +274,13 @@ a:hover {
 }
 
 .card__element-location {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	line-height: 2.5rem;
 }
 
 .card__element-skill {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	height: 50%;
 	width: 50%;
@@ -296,7 +296,7 @@ a:hover {
 }
 
 .card__element-title {
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 32px;
 	color: #F4E9CD;
 	line-height: 2.5rem;
@@ -340,7 +340,7 @@ p.skill-link {
 	padding: 0;
 	text-transform: lowercase;
 	color: var(--color-nav);
-	font-weight: 900;
+	font-weight: 800;
 	line-height: 1;
 }
 
