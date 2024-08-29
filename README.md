@@ -1,4 +1,7 @@
 # cjannunnziato.com
+
+(DEPLOYMENT CURRENTLY PAUSED)
+
 My portfolio site!
 
 Developed using JavaScript, HTML, and CSS.
